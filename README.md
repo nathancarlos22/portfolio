@@ -7,7 +7,7 @@ Este é o código-fonte do meu portfólio profissional desenvolvido com **React*
 
 ## 🖥️ Demonstração
 
-Você pode visualizar o portfólio online clicando [aqui](https://seu-portfolio.com) (substitua com o link real, se disponível).
+Você pode visualizar o portfólio online clicando [aqui](https://seu-portfolio.com) 
 
 ## 🚀 Tecnologias Utilizadas
 
