@@ -2,8 +2,8 @@
 
 Este é o código-fonte do meu portfólio profissional desenvolvido com **React**. O objetivo deste projeto é apresentar minhas habilidades, experiências e projetos em um formato interativo e responsivo.
 
-![Portfolio Screenshot](.src/assets/screenshot1.png) 
-![Portfolio Screenshot](.src/assets/screenshot2.png) 
+![Portfolio Screenshot](./src/assets/screenshot1.png) 
+![Portfolio Screenshot](./src/assets/screenshot2.png) 
 
 ## 🖥️ Demonstração
 
