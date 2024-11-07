@@ -22,30 +22,6 @@ Você pode visualizar o portfólio online clicando [aqui](https://seu-portfolio.
 - **`src/assets`**: Contém imagens e outros arquivos estáticos.
 - **`public`**: Arquivos públicos, como `index.html`, `favicon.ico`, etc.
 
-## 🔧 Configuração e Execução
-
-Para rodar este projeto localmente, siga os passos abaixo:
-
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/nathancarlos22/portfolio.git
-   ```
-
-2. **Navegue até o diretório do projeto**:
-   ```bash
-   cd seu-repositorio
-   ```
-
-3. **Instale as dependências**:
-   ```bash
-   npm install
-   ```
-
-4. **Inicie o servidor de desenvolvimento**:
-   ```bash
-   npm start
-   ```
-
 ## 📸 Funcionalidades
 
 - **Seção Hero**: Uma introdução com saudação e links para navegação rápida, incluindo ícones para LinkedIn e GitHub.
