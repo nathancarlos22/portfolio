@@ -1,4 +1,3 @@
-// src/components/Experience.js
 import React from 'react';
 
 function Experience() {
@@ -7,31 +6,47 @@ function Experience() {
       <div className="max-w-screen-lg mx-auto">
         <h2 className="text-3xl font-bold">Experiência Profissional</h2>
 
+        {/* Zoox Smart Data */}
         <div className="mt-6 bg-gray-800 rounded-lg p-6 shadow-lg">
-          <h3 className="text-xl font-semibold">Analista de Dados e Desenvolvedor</h3>
-          <p className="text-gray-400">Jan/2023 - Jul/2024</p>
-          <ul className="mt-2 list-disc list-inside text-gray-300">
-            <li>Análise de dados de geolocalização para desenvolver um dashboard utilizando React.js, Next.js com backend Java;</li>
-            <li>Elaboração de uma base de dados utilizando MongoDB para análise que comporte uma grande variedade de dados;</li>
-            <li>Criação de um servidor em Python que intermedia os dados para pré-processamento, agilizando o processo de ETL de dados;</li>
-            <li>Uso do PySpark para agilizar processos no dataframe;</li>
-            <li>Elaboração de relatórios mensais para o andamento da aplicação;</li>
-            <li>Documentação eficiente de APIs para facilitar o entendimento e a integração por parte de outros desenvolvedores;</li>
-            <li>Utilização de sistemas de controle de versão para rastrear alterações no código;</li>
-            <li>Entendimento de gerenciamento de projetos ágeis, Scrum.</li>
+          <h3 className="text-xl font-semibold">Zoox Smart Data | Analista de Dados</h3>
+          <p className="text-gray-400">Fev/2025 - Mai/2025</p>
+          <ul className="mt-4 list-disc list-inside text-gray-300 space-y-2">
+            <li>Análise de grandes volumes de dados com Python (Pandas) e Excel, utilizando bases de fornecedores como Assertiva, Boa Vista e Big Data Corp.</li>
+            <li>Criação de pipelines em Python para tratamento, padronização e enriquecimento de dados (deduplicação, geolocalização, score de qualidade).</li>
+            <li>Extração automatizada via web scraping (Selenium) para consolidar nomes de operadoras, reduzindo em 70% o tempo de coleta e elevando a acurácia dos relatórios.</li>
+            <li>Proposta e implementação de melhorias na infraestrutura MongoDB, aumentando em 60% a veracidade dos dados e otimizando a armazenagem.</li>
+            <li>Integração com APIs externas (Google Serper) para validação de dados de localização.</li>
+            <li>Geração de insights em Python e Excel para apoiar decisões de negócio.</li>
+            <li>Atuação em times ágeis com dailies, sprints e reuniões via Jira, Google Chat e Microsoft Teams.</li>
           </ul>
         </div>
 
+        {/* TNS Latam */}
         <div className="mt-6 bg-gray-800 rounded-lg p-6 shadow-lg">
-          <h3 className="text-xl font-semibold">Estagiário Front-End Developer</h3>
-          <p className="text-gray-400">Out/2022 - Abr/2022</p>
-          <ul className="mt-2 list-disc list-inside text-gray-300">
-            <li>Elaboração de componentes em React.js com back-end Java, Node.js, Postgres e SQL para criação de um sistema de matrículas para o Governo do Estado da Paraíba que auxiliou inúmeras pessoas no período da pandemia;</li>
-            <li>Criação e implementação de interfaces de usuário responsivas e acessíveis utilizando HTML, CSS e JavaScript;</li>
-            <li>Entendimento de gerenciamento de projetos ágeis, Scrum;</li>
-            <li>Participações de reuniões semanais.</li>
+          <h3 className="text-xl font-semibold">TNS Latam | Analista de Dados & Desenvolvedor</h3>
+          <p className="text-gray-400">Jan/2023 - Jul/2024</p>
+          <ul className="mt-4 list-disc list-inside text-gray-300 space-y-2">
+            <li>Desenvolvi pipelines ETL com Python e PySpark para processar e analisar grandes volumes de dados, garantindo qualidade e escalabilidade.</li>
+            <li>Modelei coleções MongoDB e escrevi consultas analíticas de alto desempenho.</li>
+            <li>Projetei dashboards de geolocalização com React.js, Next.js e Spring Boot, reduzindo em 50% o tempo de identificação de falhas operacionais.</li>
+            <li>Realizei análises de performance de dados com Apache Spark e Python.</li>
+            <li>Implementei APIs RESTful em Spring Boot e criei componentes frontend em React.js/Next.js, seguindo boas práticas de UX e acessibilidade.</li>
+            <li>Documentei endpoints, escrevi testes automatizados e gerenciei pipelines de CI/CD com Git e Jenkins.</li>
+            <li>Trabalhei em ambiente Scrum, participando de cerimônias diárias, planejamento de sprints e retrospectivas.</li>
           </ul>
+        </div>
 
+        {/* Pré-matrícula UFPB/SEECT-FAPESQ */}
+        <div className="mt-6 bg-gray-800 rounded-lg p-6 shadow-lg">
+          <h3 className="text-xl font-semibold">UFPB/SEECT-FAPESQ | Estagiário Front-End Developer</h3>
+          <p className="text-gray-400">Out/2022 - Abr/2022</p>
+          <ul className="mt-4 list-disc list-inside text-gray-300 space-y-2">
+            <li>Modelagem de dados e integração com PostgreSQL para plataforma de pré-matrícula digital.</li>
+            <li>Desenvolvi componentes em React.js/Next.js integrados a APIs RESTful em Node.js e TypeScript.</li>
+            <li>Implementei interfaces acessíveis com HTML5, CSS3 e Tailwind CSS, garantindo compatibilidade cross-browser.</li>
+            <li>Colaborei em squad ágil, participando de planning, dailies e refinamento de backlog.</li>
+            <li>Conduzi testes de usabilidade e documentação de fluxos, reduzindo o tempo de cadastro e melhorando a experiência dos estudantes.</li>
+          </ul>
         </div>
       </div>
     </section>

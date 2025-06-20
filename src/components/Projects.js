@@ -1,102 +1,91 @@
-// src/components/ProjectsCarousel.js
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Para ícones de setas personalizados
+import { FaGithub } from 'react-icons/fa';
 
-// Ativar módulos no SwiperCore
-SwiperCore.use([Navigation, Pagination]);
+const projects = [
+  {
+    title: "Avaliação de Modelos Preditivos em Estatísticas Esportivas ao Vivo",
+    link: "https://github.com/nathancarlos22/eo-fut-live",
+    description: "Pipeline de dados em tempo real para avaliar modelos de machine learning em eventos esportivos ao vivo."
+  },
+  {
+    title: "Análise de Sentimento de Comentários na Amazon com Transformers e Gradio",
+    link: "https://github.com/nathancarlos22/pln-projeto-reviews",
+    description: "Classificação de sentimentos em reviews com modelos Transformers e interface interativa Gradio."
+  },
+  {
+    title: "Dashboard de Visualização de Ações Financeiras com Vega-Lite, PHP e CSS",
+    link: "https://github.com/nathancarlos22/Olho-de-Tandera-Finance",
+    description: "Dashboard responsivo para monitoramento de ações, construído com Vega-Lite no front-end e PHP no back-end."
+  },
+  {
+    title: "Sistema de Delivery de Comida (Semelhante ao iFood)",
+    link: "https://github.com/nathancarlos22/Project-Ifood-FrontEnd",
+    description: "Aplicação front-end de delivery de refeições com React.js, integrando APIs de pedido e pagamento."
+  },
+  {
+    title: "Implementação de Algoritmo de Otimização para Problemas com Branch-and-Bound",
+    link: "https://github.com/nathancarlos22/Projeto-final-PO",
+    description: "Solução em Python para problemas de otimização combinatória usando técnica de Branch-and-Bound."
+  },
+  {
+    title: "Chatbot de Reconhecimento de Intenções",
+    link: "https://github.com/nathancarlos22/chatbot-intent",
+    description: (
+      <>
+        <p>Chatbot que utiliza BERT para identificar intenções de usuários e responder de forma personalizada.</p>
+        <ul>
+          <li>Detecção de Intenções: reconhece até 10 intenções diferentes.</li>
+          <li>Respostas Personalizadas: gera respostas adequadas substituindo <code>&lt;HUMAN&gt;</code> pelo nome do usuário.</li>
+          <li>Histórico de Intenções: armazena e permite consulta das últimas três intenções.</li>
+          <li>Treinamento do Modelo: faz re-treinamento automático se não houver modelo salvo.</li>
+        </ul>
+      </>
+    )
+  },
+  {
+    title: "Backtesting de Estratégias com Médias Móveis para BTC/USD",
+    link: "https://github.com/nathancarlos22/eo-trade",
+    description: (
+      <>
+        <p>Projeto de backtesting de estratégias usando EMAs e API da Binance para o par BTC/USD.</p>
+        <ul>
+          <li>Coleta de Dados Históricos: obtém candles via Binance API.</li>
+          <li>Cálculo de EMAs: identifica cruzamentos de médias móveis para sinais de compra e venda.</li>
+          <li>Simulação de Portfólio: avalia desempenho de capital fictício com Python.</li>
+          <li>Notificações: envia sinais via Telegram em tempo real.</li>
+        </ul>
+      </>
+    )
+  }
+];
 
-function ProjectsCarousel() {
-  const projects = [
-    {
-      title: "Avaliação de Modelos Preditivos em Estatísticas Esportivas ao Vivo",
-      description: "Desenvolvimento de código para extração de informações relevantes utilizando técnicas avançadas de aprendizado de máquina e web scraping, com o objetivo de prever a ocorrência de eventos em partidas esportivas ao vivo.",
-      date: "Mar/2024"
-    },
-    {
-      title: "Análise de Sentimento de Comentários na Amazon com Transformers e Gradio",
-      description: "Coleta de comentários de produtos na Amazon via web scraping e aplicação de modelos Transformers para análise de sentimento. Uma interface de usuário interativa foi criada com Gradio, permitindo análises de sentimento em tempo real.",
-      date: "Dez/2022"
-    },
-    {
-      title: "Dashboard de Visualização de Ações Financeiras com Vega-Lite, PHP e CSS",
-      description: "Desenvolvimento de um dashboard interativo para visualização de dados financeiros, utilizando Vega-Lite para visualizações e PHP para o back-end. O projeto foi implantado no Heroku.",
-      date: "Jun/2022"
-    },
-    {
-      title: "Implementação de Algoritmo de Otimização para Problemas com Branch-and-Bound",
-      description: "Aplicação da técnica de árvore de ramificação e corte (Branch-and-Bound) para resolver problemas de otimização, utilizando uma estrutura binária para armazenar soluções e modelos.",
-      date: "Mar/2020"
-    },
-    {
-      title: "Sistema de Delivery de Comida (Semelhante ao iFood)",
-      description: "Desenvolvimento de uma aplicação web para delivery de comida, integrando ReactJS no front-end, Node.js no back-end e SQL para o gerenciamento do banco de dados.",
-      date: "Jun/2022"
-    },
-    {
-      title: "Spellchecker Utilizando Tabelas Hash",
-      description: "Criação de um programa de verificação ortográfica (Spellchecker) com o uso de tabelas hash para comparação de palavras com um dicionário, avaliando diferentes métodos de tratamento de colisão.",
-      date: "Jun/2022"
-    }
-  ];
-
+function Projects() {
   return (
     <section id="projects" className="bg-white px-4 py-16 text-black">
       <div className="max-w-screen-lg mx-auto">
-        <h2 className="text-3xl font-bold text-center">Projetos Relevantes</h2>
-        
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={1}
-          navigation={{
-            prevEl: '.swiper-button-prev',
-            nextEl: '.swiper-button-next',
-          }}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 }
-          }}
-          className="mt-8 relative"
-        >
-          {projects.map((project, index) => (
-            <SwiperSlide key={index}>
-              <div className="p-6 bg-gray-900 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="mt-2 text-gray-400">{project.description}</p>
-                <p className="mt-4 text-sm font-bold text-gray-500">{project.date}</p>
+        <h2 className="text-3xl font-bold mb-8">Projetos</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projects.map((proj) => (
+            <div key={proj.link} className="bg-gray-100 rounded-lg shadow-lg p-6 relative">
+              <a
+                href={proj.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-4 right-4 text-gray-700 hover:text-black"
+                aria-label={`Repositório GitHub de ${proj.title}`}
+              >
+                <FaGithub size={24} />
+              </a>
+              <h3 className="text-xl font-semibold mb-2">{proj.title}</h3>
+              <div className="text-gray-700 text-sm">
+                {proj.description}
               </div>
-            </SwiperSlide>
+            </div>
           ))}
-
-          {/* Custom Navigation Buttons */}
-          <div className="swiper-button-prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white text-2xl p-2 bg-gray-700 rounded-full shadow-lg cursor-pointer hover:bg-gray-600 transition duration-300">
-            <FaArrowLeft />
-          </div>
-          <div className="swiper-button-next absolute top-1/2 right-0 transform -translate-y-1/2 text-white text-2xl p-2 bg-gray-700 rounded-full shadow-lg cursor-pointer hover:bg-gray-600 transition duration-300">
-            <FaArrowRight />
-          </div>
-        </Swiper>
-
-        {/* Pagination style adjustments */}
-        <style jsx>{`
-          .swiper-pagination-bullet {
-            background-color: #4a5568;
-            opacity: 1;
-            margin: 0 4px !important;
-          }
-          .swiper-pagination-bullet-active {
-            background-color: #1a202c;
-          }
-        `}</style>
+        </div>
       </div>
     </section>
   );
 }
 
-export default ProjectsCarousel;
+export default Projects;

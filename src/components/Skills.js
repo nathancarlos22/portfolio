@@ -1,4 +1,3 @@
-// src/components/Skills.js
 import React from 'react';
 
 function Skills() {
@@ -6,48 +5,43 @@ function Skills() {
     <section id="skills" className="bg-gradient-to-b from-gray-100 to-gray-200 px-6 py-16">
       <div className="max-w-screen-lg mx-auto">
         <h2 className="text-4xl font-extrabold text-gray-800 mb-8 text-center">Habilidades</h2>
-        
-        {/* Habilidades de Desenvolvedor */}
+
+        {/* Análise & Engenharia de Dados */}
         <div className="mt-8">
-          <h3 className="text-3xl font-semibold text-gray-700 mb-4">Desenvolvedor</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-            <SkillCard title="Linguagens" skills="HTML5, CSS3, JavaScript" />
-            <SkillCard title="Banco de Dados" skills="PostgreSQL, MySQL" />
-            <SkillCard title="Frameworks e Bibliotecas" skills="React.js, Next.js, Node.js" />
-            <SkillCard title="Ferramentas" skills="Git, AWS, Linux" />
-            <SkillCard title="Versionamento" skills="Git (Controle de versões e releases)" />
-            <SkillCard title="Boas Práticas" skills="SOLID, Clean Code" />
-            <SkillCard title="APIs" skills="RESTful APIs" />
-            <SkillCard title="Padrões de Design" skills="Escalabilidade e padrões de design" />
-            <SkillCard title="Testes" skills="Unitários e funcionais (Jest)" />
+          <h3 className="text-3xl font-semibold text-gray-700 mb-4">Análise & Engenharia de Dados</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <SkillCard title="Análise de Dados" skills="Python (Pandas, NumPy), SQL, Excel, PySpark, ETL" />
+            <SkillCard title="Machine Learning" skills="scikit-learn, TensorFlow, Keras, AutoML, Redes Neurais" />
+            <SkillCard title="Visualização" skills="Power BI, Tableau, Matplotlib, Vega-Lite" />
+            <SkillCard title="Big Data" skills="Apache Spark, Databricks, PySpark" />
+            <SkillCard title="Bancos de Dados" skills="MongoDB, PostgreSQL, MySQL, NoSQL" />
+            <SkillCard title="Cloud & DevOps" skills="AWS, Docker, Jenkins, CI/CD" />
           </div>
         </div>
 
-        {/* Habilidades de Ciência de Dados */}
+        {/* Desenvolvimento Web & APIs */}
         <div className="mt-16">
-          <h3 className="text-3xl font-semibold text-gray-700 mb-4">Ciência de Dados</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-            <SkillCard title="Análise de Dados" skills="Python, Excel, PySpark, SQL, Pandas, NumPy, ETL" />
-            <SkillCard title="Machine Learning" skills="scikit-learn, TensorFlow, Keras, AutoML, redes neurais" />
-            <SkillCard title="Visualização de Dados" skills="Power BI, Tableau, Matplotlib, Seaborn, Vega-Lite" />
-            <SkillCard title="Bancos de Dados" skills="MySQL, PostgreSQL, MongoDB, SQL, NoSQL" />
-            <SkillCard title="Big Data" skills="Apache Spark, Databricks" />
-            <SkillCard title="Cloud Computing" skills="AWS, Docker" />
-            <SkillCard title="Outras Tecnologias" skills="API Restful, Selenium (Web Scraping), Docker, Linux" />
+          <h3 className="text-3xl font-semibold text-gray-700 mb-4">Desenvolvimento Web & APIs</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <SkillCard title="Front-End" skills="HTML5, CSS3, JavaScript, React.js, Next.js" />
+            <SkillCard title="Back-End" skills="Node.js, Express, Spring Boot, RESTful APIs" />
+            <SkillCard title="Versionamento" skills="Git, GitHub, Bitbucket" />
+            <SkillCard title="Acessibilidade" skills="WCAG, práticas de UX" />
+            <SkillCard title="Testes" skills="Jest, React Testing Library, Cypress" />
+            <SkillCard title="Monitoramento" skills="Tailwind CSS, Styled Components, Storybook" />
           </div>
         </div>
 
         {/* Soft Skills */}
         <div className="mt-16">
           <h3 className="text-3xl font-semibold text-gray-700 mb-4">Soft Skills</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-            <SkillCard title="Metodologias Ágeis" skills="Scrum, Kanban, Jira" />
-            <SkillCard title="Versionamento e Colaboração" skills="Git, GitHub, Bitbucket" />
-            <SkillCard title="Comunicação" skills="Habilidade para comunicar ideias e resultados de forma clara e eficaz" />
-            <SkillCard title="Trabalho em Equipe" skills="Colaboração com equipes multidisciplinares para alcançar metas comuns" />
-            <SkillCard title="Adaptabilidade" skills="Capacidade de se adaptar rapidamente a novas ferramentas e tecnologias" />
-            <SkillCard title="Resolução de Problemas" skills="Pensamento crítico e habilidades de resolução de problemas complexos" />
-            <SkillCard title="Organização" skills="Gestão eficiente de tempo e organização para cumprir prazos" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <SkillCard title="Comunicação" skills="Clara e objetiva na apresentação de resultados" />
+            <SkillCard title="Trabalho em Equipe" skills="Colaboração multidisciplinar em Scrum" />
+            <SkillCard title="Adaptabilidade" skills="Rapidez no aprendizado de novas ferramentas" />
+            <SkillCard title="Resolução de Problemas" skills="Análise crítica e soluções criativas" />
+            <SkillCard title="Organização" skills="Gestão de tempo e prioridades" />
+            <SkillCard title="Agilidade" skills="Scrum, Kanban, planejamento de sprints" />
           </div>
         </div>
       </div>

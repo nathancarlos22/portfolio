@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renderiza seção Sobre', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const sobreHeading = screen.getByRole('heading', { name: /sobre mim/i });
+  expect(sobreHeading).toBeInTheDocument();
 });

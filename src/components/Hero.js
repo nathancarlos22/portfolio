@@ -1,4 +1,3 @@
-// src/components/Hero.js
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
@@ -12,7 +11,7 @@ function Hero() {
         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold">
           Olá, eu sou <span className="text-gray-200">Nathan Carlos</span> 👋
         </h1>
-        <p className="mt-4 text-lg sm:text-xl text-gray-400">Cientista de Dados e Desenvolvedor</p>
+        <p className="mt-4 text-lg sm:text-xl text-gray-400">Analista de Dados e Desenvolvedor</p>
 
         {/* Seção de Navegação */}
         <div className="flex flex-wrap justify-center gap-4 mb-4">
